@@ -1,0 +1,240 @@
+	.text
+	.syntax unified
+	.eabi_attribute	67, "2.09"	@ Tag_conformance
+	.cpu	cortex-m23
+	.eabi_attribute	6, 16	@ Tag_CPU_arch
+	.eabi_attribute	7, 77	@ Tag_CPU_arch_profile
+	.eabi_attribute	8, 0	@ Tag_ARM_ISA_use
+	.eabi_attribute	9, 3	@ Tag_THUMB_ISA_use
+	.eabi_attribute	34, 0	@ Tag_CPU_unaligned_access
+	.eabi_attribute	17, 1	@ Tag_ABI_PCS_GOT_use
+	.eabi_attribute	20, 2	@ Tag_ABI_FP_denormal
+	.eabi_attribute	21, 0	@ Tag_ABI_FP_exceptions
+	.eabi_attribute	23, 1	@ Tag_ABI_FP_number_model
+	.eabi_attribute	24, 1	@ Tag_ABI_align_needed
+	.eabi_attribute	25, 1	@ Tag_ABI_align_preserved
+	.eabi_attribute	38, 1	@ Tag_ABI_FP_16bit_format
+	.eabi_attribute	18, 2	@ Tag_ABI_PCS_wchar_t
+	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
+	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
+	.file	"modbus_func.c"
+	.file	1 "C:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
+	.file	2 "E:\\ROBOCON2024\\01. Coding\\Nuvoton\\demo_robot_3wheel\\SampleCode\\NuCodeGen\\DemoCodeGen\\KEIL" "modbus_func.c"
+	.hidden	CTRL_CMD                        @ @CTRL_CMD
+	.type	CTRL_CMD,%object
+	.section	.data.CTRL_CMD,"aw",%progbits
+	.globl	CTRL_CMD
+	.p2align	1, 0x0
+CTRL_CMD:
+	.short	8192                            @ 0x2000
+	.size	CTRL_CMD, 2
+
+	.hidden	SPEED_ADDR                      @ @SPEED_ADDR
+	.type	SPEED_ADDR,%object
+	.section	.data.SPEED_ADDR,"aw",%progbits
+	.globl	SPEED_ADDR
+	.p2align	1, 0x0
+SPEED_ADDR:
+	.short	8193                            @ 0x2001
+	.size	SPEED_ADDR, 2
+
+	.hidden	MOTOR_PAIR_ADDR                 @ @MOTOR_PAIR_ADDR
+	.type	MOTOR_PAIR_ADDR,%object
+	.section	.data.MOTOR_PAIR_ADDR,"aw",%progbits
+	.globl	MOTOR_PAIR_ADDR
+	.p2align	1, 0x0
+MOTOR_PAIR_ADDR:
+	.short	8194                            @ 0x2002
+	.size	MOTOR_PAIR_ADDR, 2
+
+	.hidden	ACC_ADDR                        @ @ACC_ADDR
+	.type	ACC_ADDR,%object
+	.section	.data.ACC_ADDR,"aw",%progbits
+	.globl	ACC_ADDR
+	.p2align	1, 0x0
+ACC_ADDR:
+	.short	8195                            @ 0x2003
+	.size	ACC_ADDR, 2
+
+	.hidden	DEC_ADDR                        @ @DEC_ADDR
+	.type	DEC_ADDR,%object
+	.section	.data.DEC_ADDR,"aw",%progbits
+	.globl	DEC_ADDR
+	.p2align	1, 0x0
+DEC_ADDR:
+	.short	8196                            @ 0x2004
+	.size	DEC_ADDR, 2
+
+	.hidden	CTRL_MODE_ADDR                  @ @CTRL_MODE_ADDR
+	.type	CTRL_MODE_ADDR,%object
+	.section	.data.CTRL_MODE_ADDR,"aw",%progbits
+	.globl	CTRL_MODE_ADDR
+	.p2align	1, 0x0
+CTRL_MODE_ADDR:
+	.short	8197                            @ 0x2005
+	.size	CTRL_MODE_ADDR, 2
+
+	.section	.debug_abbrev,"",%progbits
+	.byte	1                               @ Abbreviation Code
+	.byte	17                              @ DW_TAG_compile_unit
+	.byte	1                               @ DW_CHILDREN_yes
+	.byte	37                              @ DW_AT_producer
+	.byte	14                              @ DW_FORM_strp
+	.byte	19                              @ DW_AT_language
+	.byte	5                               @ DW_FORM_data2
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	16                              @ DW_AT_stmt_list
+	.byte	23                              @ DW_FORM_sec_offset
+	.byte	27                              @ DW_AT_comp_dir
+	.byte	14                              @ DW_FORM_strp
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	2                               @ Abbreviation Code
+	.byte	52                              @ DW_TAG_variable
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	63                              @ DW_AT_external
+	.byte	25                              @ DW_FORM_flag_present
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	2                               @ DW_AT_location
+	.byte	24                              @ DW_FORM_exprloc
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	3                               @ Abbreviation Code
+	.byte	22                              @ DW_TAG_typedef
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	4                               @ Abbreviation Code
+	.byte	36                              @ DW_TAG_base_type
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	62                              @ DW_AT_encoding
+	.byte	11                              @ DW_FORM_data1
+	.byte	11                              @ DW_AT_byte_size
+	.byte	11                              @ DW_FORM_data1
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	0                               @ EOM(3)
+	.section	.debug_info,"",%progbits
+.Lcu_begin0:
+	.long	.Ldebug_info_end0-.Ldebug_info_start0 @ Length of Unit
+.Ldebug_info_start0:
+	.short	4                               @ DWARF version number
+	.long	.debug_abbrev                   @ Offset Into Abbrev. Section
+	.byte	4                               @ Address Size (in bytes)
+	.byte	1                               @ Abbrev [1] 0xb:0x8c DW_TAG_compile_unit
+	.long	.Linfo_string0                  @ DW_AT_producer
+	.short	12                              @ DW_AT_language
+	.long	.Linfo_string1                  @ DW_AT_name
+	.long	.Lline_table_start0             @ DW_AT_stmt_list
+	.long	.Linfo_string2                  @ DW_AT_comp_dir
+	.byte	2                               @ Abbrev [2] 0x1e:0x11 DW_TAG_variable
+	.long	.Linfo_string3                  @ DW_AT_name
+	.long	47                              @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	2                               @ DW_AT_decl_file
+	.byte	11                              @ DW_AT_decl_line
+	.byte	5                               @ DW_AT_location
+	.byte	3
+	.long	CTRL_CMD
+	.byte	3                               @ Abbrev [3] 0x2f:0xb DW_TAG_typedef
+	.long	58                              @ DW_AT_type
+	.long	.Linfo_string5                  @ DW_AT_name
+	.byte	1                               @ DW_AT_decl_file
+	.byte	63                              @ DW_AT_decl_line
+	.byte	4                               @ Abbrev [4] 0x3a:0x7 DW_TAG_base_type
+	.long	.Linfo_string4                  @ DW_AT_name
+	.byte	7                               @ DW_AT_encoding
+	.byte	2                               @ DW_AT_byte_size
+	.byte	2                               @ Abbrev [2] 0x41:0x11 DW_TAG_variable
+	.long	.Linfo_string6                  @ DW_AT_name
+	.long	47                              @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	2                               @ DW_AT_decl_file
+	.byte	12                              @ DW_AT_decl_line
+	.byte	5                               @ DW_AT_location
+	.byte	3
+	.long	SPEED_ADDR
+	.byte	2                               @ Abbrev [2] 0x52:0x11 DW_TAG_variable
+	.long	.Linfo_string7                  @ DW_AT_name
+	.long	47                              @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	2                               @ DW_AT_decl_file
+	.byte	13                              @ DW_AT_decl_line
+	.byte	5                               @ DW_AT_location
+	.byte	3
+	.long	MOTOR_PAIR_ADDR
+	.byte	2                               @ Abbrev [2] 0x63:0x11 DW_TAG_variable
+	.long	.Linfo_string8                  @ DW_AT_name
+	.long	47                              @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	2                               @ DW_AT_decl_file
+	.byte	14                              @ DW_AT_decl_line
+	.byte	5                               @ DW_AT_location
+	.byte	3
+	.long	ACC_ADDR
+	.byte	2                               @ Abbrev [2] 0x74:0x11 DW_TAG_variable
+	.long	.Linfo_string9                  @ DW_AT_name
+	.long	47                              @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	2                               @ DW_AT_decl_file
+	.byte	15                              @ DW_AT_decl_line
+	.byte	5                               @ DW_AT_location
+	.byte	3
+	.long	DEC_ADDR
+	.byte	2                               @ Abbrev [2] 0x85:0x11 DW_TAG_variable
+	.long	.Linfo_string10                 @ DW_AT_name
+	.long	47                              @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	2                               @ DW_AT_decl_file
+	.byte	16                              @ DW_AT_decl_line
+	.byte	5                               @ DW_AT_location
+	.byte	3
+	.long	CTRL_MODE_ADDR
+	.byte	0                               @ End Of Children Mark
+.Ldebug_info_end0:
+	.section	.debug_str,"MS",%progbits,1
+.Linfo_string0:
+	.asciz	"Component: Arm Compiler for Embedded 6.19 Tool: armclang [5e73cb00]" @ string offset=0
+.Linfo_string1:
+	.asciz	"modbus_func.c"                 @ string offset=68
+.Linfo_string2:
+	.asciz	"E:\\ROBOCON2024\\01. Coding\\Nuvoton\\demo_robot_3wheel\\SampleCode\\NuCodeGen\\DemoCodeGen\\KEIL" @ string offset=82
+.Linfo_string3:
+	.asciz	"CTRL_CMD"                      @ string offset=172
+.Linfo_string4:
+	.asciz	"unsigned short"                @ string offset=181
+.Linfo_string5:
+	.asciz	"uint16_t"                      @ string offset=196
+.Linfo_string6:
+	.asciz	"SPEED_ADDR"                    @ string offset=205
+.Linfo_string7:
+	.asciz	"MOTOR_PAIR_ADDR"               @ string offset=216
+.Linfo_string8:
+	.asciz	"ACC_ADDR"                      @ string offset=232
+.Linfo_string9:
+	.asciz	"DEC_ADDR"                      @ string offset=241
+.Linfo_string10:
+	.asciz	"CTRL_MODE_ADDR"                @ string offset=250
+	.ident	"Component: Arm Compiler for Embedded 6.19 Tool: armclang [5e73cb00]"
+	.section	".note.GNU-stack","",%progbits
+	.ARM_attribute	16, 1	@ Tag_AV_eba
+	.section	.debug_line,"",%progbits
+.Lline_table_start0:
